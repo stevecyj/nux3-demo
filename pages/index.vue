@@ -3,6 +3,7 @@
 <template>
   <div>
     <h1>index</h1>
+    <Home />
   </div>
 </template>
 
