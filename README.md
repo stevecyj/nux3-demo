@@ -61,3 +61,7 @@ yarn preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## nuxt command
+
+- https://nuxt.com/docs/api/commands/add#nuxi-add
