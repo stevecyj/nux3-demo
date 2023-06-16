@@ -73,3 +73,9 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ## composables
 
 - 檔名盡量跟 function 名稱一樣
+
+## pinia
+
+```bash
+npm install pinia @pinia/nuxt
+```
