@@ -80,3 +80,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ```bash
 npm install pinia @pinia/nuxt
 ```
+
+## plugins
+
+- https://nuxt.com/docs/guide/directory-structure/plugins
