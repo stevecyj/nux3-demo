@@ -65,3 +65,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ## nuxt command
 
 - https://nuxt.com/docs/api/commands/add#nuxi-add
+
+## nuxt config
+
+- https://nuxt.com/docs/api/configuration/nuxt-config#dirs
