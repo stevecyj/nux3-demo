@@ -69,3 +69,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ## nuxt config
 
 - https://nuxt.com/docs/api/configuration/nuxt-config#dirs
+
+## composables
+
+- 檔名盡量跟 function 名稱一樣
