@@ -8,7 +8,9 @@ const selectedDate = ref(new Date());
 <template>
   <div>
     <h1>index:{{ store.count }}</h1>
-    <h2>{{ $hello("IronMan") }}</h2>
+    <ClientOnly>
+      <h2>{{ $hello("IronMan") }}</h2>
+    </ClientOnly>
     <h2 v-timeformat="1686925898493"></h2>
     <VDatePicker v-model="selectedDate" />
     <button @click="store.addCount">add</button>
