@@ -16,7 +16,8 @@ const fetchData = async () => {
     <ClientOnly>
       <h2>{{ $hello("IronMan") }}</h2>
     </ClientOnly>
-    <NuxtLink to="/user">user</NuxtLink>
+    <NuxtLink to="/user">user</NuxtLink> |
+    <NuxtLink to="/about">about</NuxtLink>
     <h2 v-timeformat="1686925898493"></h2>
     <VDatePicker v-model="selectedDate" />
     <button @click="store.addCount">add</button>
