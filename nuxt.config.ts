@@ -4,13 +4,13 @@ export default defineNuxtConfig({
   components: {
     dirs: [
       {
-        path: '~/components/global',
+        path: "~/components/global",
         global: true,
       },
     ],
   },
   imports: {
-    dirs: ['stores'],
+    dirs: ["stores/**"],
   },
-  modules: ['@pinia/nuxt'],
+  modules: ["@pinia/nuxt"],
 });
