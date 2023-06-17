@@ -1,6 +1,9 @@
 <script lang="ts" setup>
-import AboutHeader from '@/components/About/Header.vue';
-import AboutFooter from '@/components/About/Footer.vue';
+definePageMeta({
+  layout: "custom",
+});
+import AboutHeader from "@/components/About/Header.vue";
+import AboutFooter from "@/components/About/Footer.vue";
 </script>
 
 <template>
