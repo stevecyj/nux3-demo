@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import Btn from './Btn.vue';
+import BoxBtn from './BoxBtn.vue';
 </script>
 
 <template>
   <div>Component: Box/index</div>
-  <Btn />
+  <BoxBtn />
 </template>
 
 <style scoped></style>

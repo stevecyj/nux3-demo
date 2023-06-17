@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <button>Click</button>
+  <button>Box Click</button>
 </template>
 
 <style scoped></style>

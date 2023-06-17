@@ -14,6 +14,7 @@ const selectedDate = ref(new Date());
     <button @click="store.addCount">add</button>
     <Home />
     <Box />
+    <BoxBtn />
   </div>
 </template>
 
