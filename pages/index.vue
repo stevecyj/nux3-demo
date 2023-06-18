@@ -1,6 +1,19 @@
 <script setup>
 // const { count, addCount } = useAddCount();
-const { data } = await useFetch("https://api.nuxtjs.dev/mountains");
+// const { data } = await useFetch("https://api.nuxtjs.dev/mountains");
+const { data } = await useFetch("https://api.nuxtjs.dev/mountains", {
+  onRequest({ request, options }) {
+    // 設置 request headers
+    options.headers = options.headers || {};
+    options.headers.authorization = `Bearer 1234567890`;
+    console.log(options.headers);
+  },
+  onResponse({ request, response, options }) {
+    // 處理回傳資料
+    return response._data;
+  },
+});
+
 const { $hello } = useNuxtApp();
 const store = useHomeStore();
 const selectedDate = ref(new Date());
