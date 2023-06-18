@@ -1,5 +1,6 @@
 <script setup>
 // const { count, addCount } = useAddCount();
+const { data } = await useFetch("https://api.nuxtjs.dev/mountains");
 const { $hello } = useNuxtApp();
 const store = useHomeStore();
 const selectedDate = ref(new Date());
@@ -12,6 +13,7 @@ const fetchData = async () => {
 <template>
   <div>
     <h1>index:{{ store.count }}</h1>
+    {{ data }}
     <button @click="fetchData">get api data</button>
     <ClientOnly>
       <h2>{{ $hello("IronMan") }}</h2>
