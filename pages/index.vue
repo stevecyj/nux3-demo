@@ -34,6 +34,7 @@ const fetchData = async () => {
     <NuxtLink to="/user">user</NuxtLink> |
     <NuxtLink to="/about">about</NuxtLink> |
     <NuxtLink to="/async-data">async-data</NuxtLink> |
+    <NuxtLink to="/a-lot-of-fetch">a-lot-of-fetch</NuxtLink> |
     <h2 v-timeformat="1686925898493"></h2>
     <VDatePicker v-model="selectedDate" />
     <button @click="store.addCount">add</button>
