@@ -84,3 +84,7 @@ npm install pinia @pinia/nuxt
 ## plugins
 
 - https://nuxt.com/docs/guide/directory-structure/plugins
+
+## ofetch
+
+- https://github.com/unjs/ofetch
