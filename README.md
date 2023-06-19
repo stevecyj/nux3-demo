@@ -93,3 +93,7 @@ npm install pinia @pinia/nuxt
 
 - https://nuxt.com/docs/api/configuration/nuxt-config
 - https://nuxt.com/docs/guide/going-further/runtime-config
+
+## common config files
+
+- https://nuxt.com/docs/guide/concepts/typescript#nuxttsconfigjson
