@@ -17,6 +17,7 @@
     "nuxt": "^3.5.2"
   },
   "dependencies": {
+    "@nuxt/webpack-builder": "^3.5.3",
     "@pinia/nuxt": "^0.4.11",
     "@popperjs/core": "^2.11.8",
     "axios": "^1.4.0",
