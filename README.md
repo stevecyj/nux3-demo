@@ -97,3 +97,9 @@ npm install pinia @pinia/nuxt
 ## common config files
 
 - https://nuxt.com/docs/guide/concepts/typescript#nuxttsconfigjson
+
+## webpack
+
+- [webpack builder](https://www.npmjs.com/package/@nuxt/webpack-builder)
+- https://nuxt.com/docs/community/framework-contribution#packageswebpack
+- https://nuxt.com/docs/api/configuration/nuxt-config#webpack-1
