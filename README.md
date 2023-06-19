@@ -88,3 +88,7 @@ npm install pinia @pinia/nuxt
 ## ofetch
 
 - https://github.com/unjs/ofetch
+
+## Nuxt Configuration Reference
+
+- https://nuxt.com/docs/api/configuration/nuxt-config
