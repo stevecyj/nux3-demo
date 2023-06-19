@@ -92,3 +92,4 @@ npm install pinia @pinia/nuxt
 ## Nuxt Configuration Reference
 
 - https://nuxt.com/docs/api/configuration/nuxt-config
+- https://nuxt.com/docs/guide/going-further/runtime-config
