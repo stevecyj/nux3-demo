@@ -21,6 +21,13 @@ const fetchData = async () => {
   const res = await fetch("/api/hello").then((res) => res.json());
   console.log(res);
 };
+const route = useRoute();
+const router = useRouter();
+
+onMounted(() => {
+  console.log("route=>", route);
+  console.log("router=>", router);
+});
 </script>
 
 <template>
