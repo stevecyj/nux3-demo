@@ -51,8 +51,18 @@ function enableCustomLayout() {
 <template>
   <AboutHeader />
   <div>Page: about</div>
+  <NuxtLink to="/about">about index</NuxtLink> |
+  <NuxtLink to="/about/a">about a</NuxtLink> |
+  <NuxtLink to="/about/b">about b</NuxtLink> |
   <button @click="enableCustomLayout">Update layout</button>
+  <main>
+    <NuxtPage />
+  </main>
   <AboutFooter />
 </template>
 
-<style scoped></style>
+<style scoped>
+a {
+  padding: 0 20px;
+}
+</style>
