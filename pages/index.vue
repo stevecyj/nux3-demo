@@ -28,6 +28,8 @@ onMounted(() => {
   console.log("route=>", route);
   console.log("router=>", router);
 });
+
+console.log("NODE_ENV:", process.env.NODE_ENV);
 </script>
 
 <template>

@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "cross-env NODE_ENV=development nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -17,10 +17,10 @@
     "nuxt": "^3.5.2"
   },
   "dependencies": {
-    "@nuxt/webpack-builder": "^3.5.3",
     "@pinia/nuxt": "^0.4.11",
     "@popperjs/core": "^2.11.8",
     "axios": "^1.4.0",
+    "cross-env": "^7.0.3",
     "dayjs": "^1.11.8",
     "pinia": "^2.1.4",
     "v-calendar": "^3.0.3"
