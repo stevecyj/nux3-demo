@@ -38,6 +38,7 @@ onMounted(() => {
     <ClientOnly>
       <h2>{{ $hello("IronMan") }}</h2>
     </ClientOnly>
+    <NuxtLink to="/courses">courses list</NuxtLink> |
     <NuxtLink to="/user">user</NuxtLink> |
     <NuxtLink to="/about">about</NuxtLink> |
     <NuxtLink to="/async-data">async-data</NuxtLink> |
