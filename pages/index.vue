@@ -47,7 +47,7 @@ console.log("NODE_ENV:", process.env.NODE_ENV);
     <NuxtLink to="/a-lot-of-fetch">a-lot-of-fetch</NuxtLink> |
     <h2 v-timeformat="1686925898493"></h2>
     <VDatePicker v-model="selectedDate" />
-    <button @click="store.addCount">add</button>
+    <button class="box" @click="store.addCount">add</button>
     <Home />
     <Box />
     <BoxBtn />

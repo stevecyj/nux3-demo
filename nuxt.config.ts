@@ -18,9 +18,11 @@ export default defineNuxtConfig({
       ],
     },
   },
+  css:["@/assets/scss/main.scss"],
   // ssr: false,
-  // builder: "webpack",
-  devtools: { enabled: true },
+  builder: "webpack",
+  webpack: {},
+  devtools: { enabled: false },
   components: {
     dirs: [
       {
