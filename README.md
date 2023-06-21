@@ -103,3 +103,4 @@ npm install pinia @pinia/nuxt
 - [webpack builder](https://www.npmjs.com/package/@nuxt/webpack-builder)
 - https://nuxt.com/docs/community/framework-contribution#packageswebpack
 - https://nuxt.com/docs/api/configuration/nuxt-config#webpack-1
+- https://nuxt.com/docs/getting-started/configuration#external-configuration-files
