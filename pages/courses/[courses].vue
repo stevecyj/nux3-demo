@@ -8,8 +8,19 @@ const { data } = await useFetch(
 
 <template>
   <div>
-    <h1>courses: {{ data }}</h1>
+    <h1>courses:</h1>
+    {{ data }}
+    <NuxtLink :to="`/courses/${route.params.courses}/A`">A</NuxtLink>
+    <NuxtLink :to="`/courses/${route.params.courses}/B`">B</NuxtLink>
+    <NuxtLink :to="`/courses/${route.params.courses}/C`">C</NuxtLink>
+    =================================================================
+    <br />
+    <NuxtPage />
   </div>
 </template>
 
-<style></style>
+<style scoped>
+a {
+  padding: 0 20px;
+}
+</style>
