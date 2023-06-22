@@ -2,6 +2,7 @@
 
 <template>
   <div>
+    <NuxtLoadingIndicator color="#f00" :height="5" :throttle="0" />
     <header>
       <NuxtLink to="/">Home</NuxtLink>
       <NuxtLink to="/courses">Courses</NuxtLink>
