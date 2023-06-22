@@ -11,7 +11,7 @@ const router = useRouter();
 const goToCourses = (id) => router.push(`/courses/${id}`);
 </script>
 <template>
-  <a
+  <NuxtLink
     class="card"
     v-for="item in props.courses"
     :key="item.id"
@@ -28,7 +28,7 @@ const goToCourses = (id) => router.push(`/courses/${id}`);
         <h2>NTD: {{ item.money }}</h2>
       </div>
     </div>
-  </a>
+  </NuxtLink>
 </template>
 <style lang="scss" scoped>
 a.card {

@@ -2,7 +2,12 @@
 
 <template>
   <div>
-    <header><NuxtLink to="/">Home</NuxtLink>223</header>
+    <header>
+      <NuxtLink to="/">Home</NuxtLink>
+      <NuxtLink to="/courses">Courses</NuxtLink>
+      223
+    </header>
+
     <slot />
     <footer>456</footer>
   </div>
