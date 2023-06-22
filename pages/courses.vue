@@ -3,9 +3,9 @@
 <template>
   <div>
     <h1>courses</h1>
-    <NuxtLink to="/courses/1">course 1</NuxtLink>
-    <NuxtLink to="/courses/2">course 2</NuxtLink>
-    <NuxtLink to="/courses/3">course 3</NuxtLink>
+    <NuxtLink to="/courses/nuxt3">nuxt3</NuxtLink>
+    <NuxtLink to="/courses/vite">vite</NuxtLink>
+    <NuxtLink to="/courses/vue-test">vue test</NuxtLink>
     <NuxtPage />
   </div>
 </template>
