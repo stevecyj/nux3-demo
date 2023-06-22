@@ -10,9 +10,12 @@ const { data } = await useFetch(
   <div>
     <h1>courses:</h1>
     {{ data }}
+    <br />
+    <NuxtLink :to="`/courses/${route.params.courses}/`">內頁介紹</NuxtLink>
     <NuxtLink :to="`/courses/${route.params.courses}/A`">A</NuxtLink>
     <NuxtLink :to="`/courses/${route.params.courses}/B`">B</NuxtLink>
     <NuxtLink :to="`/courses/${route.params.courses}/C`">C</NuxtLink>
+    <br />
     =================================================================
     <br />
     <NuxtPage />
