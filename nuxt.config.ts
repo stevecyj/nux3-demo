@@ -20,6 +20,11 @@ export default defineNuxtConfig({
   },
   css:["@/assets/scss/main.scss"],
   // ssr: false,
+  // router: {
+  //   options: {
+  //     hashMode: true
+  //   }
+  // },
   builder: "webpack",
   webpack: {},
   devtools: { enabled: false },
