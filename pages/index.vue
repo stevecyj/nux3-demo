@@ -40,6 +40,7 @@ console.log("NODE_ENV:", process.env.NODE_ENV);
     <ClientOnly>
       <h2>{{ $hello("IronMan") }}</h2>
     </ClientOnly>
+    <NuxtLink to="/vote">vote</NuxtLink> |
     <NuxtLink to="/courses">courses list</NuxtLink> |
     <NuxtLink to="/user">user</NuxtLink> |
     <NuxtLink to="/about">about</NuxtLink> |
