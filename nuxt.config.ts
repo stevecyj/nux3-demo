@@ -18,7 +18,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css:["@/assets/scss/main.scss"],
+  css: ["@/assets/scss/main.scss"],
   // ssr: false,
   // router: {
   //   options: {
@@ -39,5 +39,12 @@ export default defineNuxtConfig({
   imports: {
     dirs: ["stores/**"],
   },
-  modules: ["@pinia/nuxt"],
+  modules: [
+    [
+      "@pinia/nuxt",
+      {
+        autoImports: ["defineStore", "acceptHMRUpdate"],
+      },
+    ],
+  ],
 });
