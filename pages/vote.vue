@@ -1,6 +1,7 @@
 <script lang="ts" setup>
-// import { storeToRefs } from "pinia";
+import { storeToRefs } from "pinia";
 const testStore = useTestStore();
+const { voteToTestData } = storeToRefs(testStore);
 const { voteData, setVoteData } = useVoteStore();
 await useAsyncData("vote", async () => {
   const data = await $fetch("https://vue-lessons-api.vercel.app/vote/list");
@@ -12,7 +13,7 @@ await useAsyncData("vote", async () => {
 
 <template>
   <div class="vote_app">
-    {{ testStore.voteToTestData }}
+    {{ voteToTestData }}
     <div class="box_list">
       <VoteCard />
     </div>
