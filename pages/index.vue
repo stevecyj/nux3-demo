@@ -30,13 +30,33 @@ onMounted(() => {
 });
 
 console.log("NODE_ENV:", process.env.NODE_ENV);
+
+// runtime config
+const config = useRuntimeConfig();
+console.log("config: ", config.public);
+const { data: dataBanner, refresh: refreshBanner } = useFetch(
+  `${config.public.apiUrl}/api/banner`,
+  {
+    headers: {
+      Authorization: `Bearer ${config.token}`,
+    },
+  }
+);
+
+if (process.server) {
+  console.log("server token:", config.token);
+}
 </script>
 
 <template>
   <div>
     <h1>index:{{ store.count }}</h1>
     {{ data }}
+    <br />
     <button @click="fetchData">get api data</button>
+    <button @click="refreshBanner">refresh banner</button>
+    <br />
+    {{ dataBanner }}
     <ClientOnly>
       <h2>{{ $hello("IronMan") }}</h2>
     </ClientOnly>

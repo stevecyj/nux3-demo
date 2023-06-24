@@ -47,4 +47,10 @@ export default defineNuxtConfig({
       },
     ],
   ],
+  runtimeConfig: {
+    token: "1234567890",
+    public: {
+      apiUrl: "https://www.mike.com",
+    },
+  },
 });
