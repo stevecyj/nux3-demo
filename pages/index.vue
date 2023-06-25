@@ -30,12 +30,14 @@ onMounted(() => {
 });
 
 console.log("NODE_ENV:", process.env.NODE_ENV);
+// console.log("process.env=> ", process.env.alias.);
 
 // console.log("ENV=>", process.env.ENV);
 // console.log("WEB_URL=>", process.env.WEB_URL);
 
 // runtime config
 const config = useRuntimeConfig();
+console.log("config: ", config);
 console.log("config: ", config.public);
 const { data: dataBanner, refresh: refreshBanner } = useFetch(
   `${config.public.apiUrl}/api/banner`,
@@ -48,6 +50,7 @@ const { data: dataBanner, refresh: refreshBanner } = useFetch(
 
 if (process.server) {
   console.log("server token:", config.token);
+  console.log("server config: ", config.alias);
 }
 </script>
 

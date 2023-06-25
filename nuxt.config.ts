@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import devConfig from "./build/nuxt.dev"
 export default defineNuxtConfig({
   app: {
     head: {
@@ -19,13 +20,16 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/scss/main.scss"],
+  alias:{
+    'theme': devConfig.resolve.alias.theme
+  },
   // ssr: false,
   // router: {
   //   options: {
   //     hashMode: true
   //   }
   // },
-  builder: "webpack",
+  // builder: "webpack",
   webpack: {
   },
   vite: {
@@ -33,7 +37,7 @@ export default defineNuxtConfig({
       // "process.env": process.env,
     },
   },
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   components: {
     dirs: [
       {
