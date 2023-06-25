@@ -26,7 +26,13 @@ export default defineNuxtConfig({
   //   }
   // },
   builder: "webpack",
-  webpack: {},
+  webpack: {
+  },
+  vite: {
+    define: {
+      // "process.env": process.env,
+    },
+  },
   devtools: { enabled: false },
   components: {
     dirs: [
@@ -47,10 +53,10 @@ export default defineNuxtConfig({
       },
     ],
   ],
-  runtimeConfig: {
-    token: "",
-    public: {
-      apiUrl: "",
-    },
-  },
+  // runtimeConfig: {
+  //   token: "",
+  //   public: {
+  //     apiUrl: "",
+  //   },
+  // },
 });
