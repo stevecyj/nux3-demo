@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   },
   css: ["@/assets/scss/main.scss"],
   alias:{
-    'theme': devConfig.resolve.alias.theme
+    'theme': process.env.npm_config_theme
   },
   // ssr: false,
   // router: {

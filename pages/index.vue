@@ -1,6 +1,10 @@
 <script setup>
 // const { count, addCount } = useAddCount();
 // const { data } = await useFetch("https://api.nuxtjs.dev/mountains");
+const theme=process.env.npm_config_theme
+const themePath = "@/themes/" + theme + "/index.vue"
+console.log('themePath=> ', themePath)
+// import Theme from themePath;
 const { data } = await useFetch("https://api.nuxtjs.dev/mountains", {
   onRequest({ request, options }) {
     // 設置 request headers
@@ -31,6 +35,7 @@ onMounted(() => {
 
 console.log("NODE_ENV:", process.env.NODE_ENV);
 console.log("process argv=> ", process.env.npm_config_theme);
+console.log("@alias=> ", import.meta.url);
 
 // console.log("ENV=>", process.env.ENV);
 // console.log("WEB_URL=>", process.env.WEB_URL);
@@ -55,6 +60,7 @@ if (process.server) {
 </script>
 
 <template>
+  // <Theme />
   <div>
     <h1>index:{{ store.count }}</h1>
     {{ data }}

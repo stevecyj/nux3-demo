@@ -1,7 +1,7 @@
 export default {
   resolve: {
     alias: {
-      theme: "123",
+      theme: "11",
     },
   },
 };
