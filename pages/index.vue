@@ -30,7 +30,7 @@ onMounted(() => {
 });
 
 console.log("NODE_ENV:", process.env.NODE_ENV);
-// console.log("process.env=> ", process.env.alias.);
+console.log("process argv=> ", process.env.npm_config_theme);
 
 // console.log("ENV=>", process.env.ENV);
 // console.log("WEB_URL=>", process.env.WEB_URL);

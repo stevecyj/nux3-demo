@@ -104,3 +104,6 @@ npm install pinia @pinia/nuxt
 - https://nuxt.com/docs/community/framework-contribution#packageswebpack
 - https://nuxt.com/docs/api/configuration/nuxt-config#webpack-1
 - https://nuxt.com/docs/getting-started/configuration#external-configuration-files
+
+## dev npm script
+`npm run dev --theme=11`
